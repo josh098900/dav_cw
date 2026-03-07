@@ -1,12 +1,16 @@
 
-# DATA NOTE (ill mention this in section c) — David Reed (David Vern Reed)
+# DATA NOTE — David Reed (David Vern Reed) (i will add this to section c)
 # During exploration, i discovered that the lead_writers lookup table contains
-# a row for "David Reed" (real name: David Vern Reed) where the UID is NA.
-# The notes: "See David Vern [Reed]" and "Uses both Vern and Vern-Reed"
-# indicating Alex was aware of the entry but never assigned a proper UID.
-# This caused all issues with no writer recorded (Write_Lead = NA) to
-# incorrectly join to David Reed,inflating his issue count to 64
+# TWO entries for this writer:
+# SW_2205 — correctly recorded with 9 issues attributed
+# NA UID  — duplicate entry with no UID, notes read "See David Vern [Reed]"
+# and "Uses both Vern and Vern-Reed"
+# The NA UID entry caused all issues with no writer recorded (Write_Lead = NA)
+# to incorrectly join to this row,inflating his count to 64
 # and placing him falsely in the top 10.
+# Fix applied: filter(!is.na(Write_Lead)) before the join removes all
+# unattributed issues, leaving his correct count of 9 under SW_2205.
+
 
 
 
