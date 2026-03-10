@@ -1,7 +1,6 @@
 
 library(plotly) #so i can make it interactive, the number of issues is viewable on hover
-glimpse(titles_overview)
-glimpse(issues)
+
 
 top_20_titles <- issues %>%
   #  filtering out the reminder note and the 'b' separators (as i read through the excel file i realised R would count the line breaks as issues which would ruin the data)
@@ -52,4 +51,4 @@ top20_bar_chart <- plot_ly(
   )
 
 # calling object
-top20_bar_chart
+#top20_bar_chart

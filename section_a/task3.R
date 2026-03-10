@@ -62,4 +62,4 @@ career_comparison_chart <- subplot(
   )
 
 # Call chart
-career_comparison_chart
+#career_comparison_chart

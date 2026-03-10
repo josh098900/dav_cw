@@ -129,4 +129,4 @@ p <- ggplot(career_totals %>% filter(Total_Covers > 0),
 career_chart <- ggplotly(p, tooltip = "text")
 
 # Call
-career_chart
+#career_chart

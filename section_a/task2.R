@@ -103,5 +103,5 @@ prolific_writers_treemap <- plot_ly(
   )
 
 # Call object
-prolific_writers_treemap
+#prolific_writers_treemap
 
