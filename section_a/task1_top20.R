@@ -41,7 +41,7 @@ top20_bar_chart <- plot_ly(
   hoverinfo = 'text+x',
 
   # colour of bars
-  marker = list(colour = 'steelblue')
+  marker = list(color = 'pink')
 ) %>%
 
   # The layout section for clear labelling
